@@ -155,13 +155,14 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-      type: BottomNavigationBarType.fixed,
-      items: const [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.dashboard), label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.shopping_cart), label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.favorite_outlined), label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.person), label: ''),
+
+        type: BottomNavigationBarType.fixed,
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.dashboard), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite_outlined), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: ''),
       ],
     ),
     );

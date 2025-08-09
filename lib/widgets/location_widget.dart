@@ -30,7 +30,7 @@ class LocationWidget extends StatelessWidget {
             Text('BTM Layout, 500628',style: AppTextStyles.poppinsMedium.copyWith(fontSize: 15))
           ],
         ),
-        SizedBox(width: 133),
+        SizedBox(width: 115),
         IconButton(onPressed: (){}, icon: Icon(Icons.keyboard_arrow_right_sharp))
       ],
 

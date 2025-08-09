@@ -81,7 +81,7 @@ class PreviousOrderSection extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(width: 20),
+            // SizedBox(width: 5),
 
             // Discount Text
             Container(
