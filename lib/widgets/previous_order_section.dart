@@ -33,17 +33,15 @@ class PreviousOrderSection extends StatelessWidget {
                     height: 65,
                     width: 300,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(10),
                       color: Colors.grey.withValues(alpha: 0.3)
                     ),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Image.asset(AppImages.avocado,height: 50,width: 50,),
-                        SizedBox(width: 20),
                         Image.asset(AppImages.pizza,height: 50,width: 50,),
-                        SizedBox(width: 20),
                         Image.asset(AppImages.coke,height: 50,width: 50,),
-                        SizedBox(width: 20),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -67,11 +65,11 @@ class PreviousOrderSection extends StatelessWidget {
                           Text('Final Total: ₹123',style: AppTextStyles.poppinsBold.copyWith(fontSize: 20),),
                         ],
                       ),
-                      SizedBox(width: 45),
+                      SizedBox(width: 30),
                       // Order Again Button
                       Container(
                         height: 50,
-                        width: 100,
+                        width: 118,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           color: AppColors.primaryGreen,
@@ -98,12 +96,9 @@ class PreviousOrderSection extends StatelessWidget {
               child: RotatedBox(
                 quarterTurns: 3, // the text will rotate 270 degrees
                 child: Center(
-                  child: const Text(
-                    "Get Flat 10% OFF",
-                    style: TextStyle(
-                      color: AppColors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
+                  child: Text(
+                    "Order Again Get Flat 10% OFF",
+                    style: AppTextStyles.dmSansBold.copyWith(color: AppColors.white,fontSize: 12),
                   ),
                 ),
               ),

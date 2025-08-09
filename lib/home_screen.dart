@@ -108,6 +108,7 @@ class HomeScreen extends StatelessWidget {
             SectionHeading(title: 'Top Brands', showActionButton: true, icon: IconButton(icon: Icon(Icons.keyboard_arrow_right_sharp), onPressed: () {})),
             SizedBox(
               height: 50,
+
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
