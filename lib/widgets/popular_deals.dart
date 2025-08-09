@@ -104,7 +104,7 @@ class PopularDeals extends StatelessWidget {
                       style: AppTextStyles.dmSansRegular.copyWith(
                           fontSize: 12, color: AppColors.orange))),
 
-                )
+                ),
               ],
             ),
           ),
