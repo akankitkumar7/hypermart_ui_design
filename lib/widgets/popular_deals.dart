@@ -11,12 +11,14 @@ class PopularDeals extends StatelessWidget {
     this.showAddMinusButton = false,
     this.imageTitle = '',
     this.isLiked = false,
+    required this.price,
   });
 
   final bool showDiscountTag;
   final bool showAddToCartButton;
   final bool showAddMinusButton;
   final String image;
+  final double price;
   final String imageTitle;
   final bool isLiked;
 
@@ -50,7 +52,7 @@ class PopularDeals extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('₹10'),
+                    Text('\$ $price'),
                     Row(
                       children: [
                         Text('4.8'),

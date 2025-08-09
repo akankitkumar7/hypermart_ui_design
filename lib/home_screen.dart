@@ -91,8 +91,8 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                PopularDeals(showDiscountTag: true, image: AppImages.strawberry,showAddMinusButton: true,imageTitle: 'Strawberries',),
-                PopularDeals(showDiscountTag: false, image: AppImages.chips, imageTitle: 'Chips',isLiked: true,),
+                PopularDeals(showDiscountTag: true, image: AppImages.strawberry,showAddMinusButton: true,imageTitle: 'Strawberries',price: 10.4,),
+                PopularDeals(showDiscountTag: false, image: AppImages.chips, imageTitle: 'Chips',isLiked: true, price: 1.2,),
 
               ],
             ),
@@ -100,8 +100,8 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                PopularDeals(showDiscountTag: false, image: AppImages.sofa,showAddMinusButton: false,imageTitle: 'Modern Chair',isLiked: true,),
-                PopularDeals(showDiscountTag: false, image: AppImages.machine,showAddMinusButton: true, imageTitle: 'LG Washing Machine',),
+                PopularDeals(showDiscountTag: false, image: AppImages.sofa,showAddMinusButton: false,imageTitle: 'Modern Chair',isLiked: true, price: 300.4,),
+                PopularDeals(showDiscountTag: false, image: AppImages.machine,showAddMinusButton: true, imageTitle: 'LG Washing Machine',price: 2000.02,),
               ],
             ),
             const SizedBox(height: 15),
