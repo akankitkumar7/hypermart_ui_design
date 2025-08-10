@@ -143,6 +143,13 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+                // Instead of calling ExclusiveBeautyDealsSection() multiple times, you can use ListView.separator
+                // but you need the data dynamically(like Fetching from database like Firebase) you pass itemCount = items.length
+                // in separatorBuilder you can use a SizedBox() give some height or width as per your requirements.
+                // in itemBuilder : it will takes context and index and return the widget like a container or any other
+                // Widget as per your likings.
+                // or you can create a list of type String(or any other types) of items you want to display
+                // on the UI (like images ) locally then you can pass itemCount as images.length.
                 ExclusiveBeautyDealsSection(image: AppImages.sugar, discountText: '5% OFF'),
                 SizedBox(width: 15),
                 ExclusiveBeautyDealsSection(image: AppImages.lakme, discountText: '20% OFF'),
